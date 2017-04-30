@@ -2,42 +2,37 @@ package lab7_201620932;
 
 public class Laptop extends Product implements Networked, DataStorage {
 
-	double totalCapacity;
-	double usedCapacity;
+	double totalCapacity = 500;
+	double usedCapacity = 300;
 	
 	Laptop() {}
 
 	@Override
 	public double getFreeCapacity() {
-		// TODO Auto-generated method stub
-		return 0;
+		return totalCapacity - usedCapacity;
 	}
 
 	@Override
 	public void format() {
-		// TODO Auto-generated method stub
-
+		usedCapacity = 0;
+		System.out.println("Formatted. Free Capacity : " + this.getFreeCapacity());
 	}
 
 	@Override
 	public boolean isConnected() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
 	public double maxSpeed() {
-		// TODO Auto-generated method stub
-		return 0;
+		return 2.5;
 	}
 
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
 		return Laptop.class.getSimpleName();
 	}
 	
-
 	public double getTotalCapacity() {
 		return totalCapacity;
 	}

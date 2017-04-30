@@ -11,7 +11,7 @@ public class SmartTV extends Product implements Networked {
 	@Override
 	public double maxSpeed() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 1.25;
 	}
 
 	@Override
