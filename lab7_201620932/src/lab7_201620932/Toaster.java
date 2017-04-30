@@ -11,6 +11,7 @@ public class Toaster extends Product implements Cooker {
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
+		Toaster.class.getSimpleName();
 		return null;
 	}
 
