@@ -14,5 +14,4 @@ public class Toaster extends Product implements Cooker {
 		Toaster.class.getSimpleName();
 		return null;
 	}
-
 }
